@@ -1,0 +1,1 @@
+export type PublishState = 'draft' | 'archived' | 'featured' | 'published';
