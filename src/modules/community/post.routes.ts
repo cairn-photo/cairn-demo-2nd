@@ -22,9 +22,13 @@ export const postRoutes: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.post('/:postId/comments', async (request) => ({
-    postId: request.params.postId,
-    commentId: 'comment_demo',
-    text: (request.body as { text?: string } | undefined)?.text ?? ''
-  }));
+  app.post<{ Params: { postId: string } }>('/:postId/comments', async (request) => {
+    const { postId } = request.params;
+
+    return {
+      postId,
+      commentId: 'comment_demo',
+      text: (request.body as { text?: string } | undefined)?.text ?? ''
+    };
+  });
 };

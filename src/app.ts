@@ -11,6 +11,7 @@ import { mapRoutes } from './modules/map/map.routes.js';
 import { calendarRoutes } from './modules/calendar/calendar.routes.js';
 import { searchRoutes } from './modules/search/search.routes.js';
 import { uploadRoutes } from './modules/uploads/upload.routes.js';
+import { onboardingRoutes } from './modules/onboarding/onboarding.routes.js';
 import type { AppEnv } from './config/env.js';
 
 export const buildApp = (env: AppEnv): FastifyInstance => {
@@ -43,6 +44,7 @@ export const buildApp = (env: AppEnv): FastifyInstance => {
   void app.register(calendarRoutes, { prefix: '/calendar' });
   void app.register(searchRoutes, { prefix: '/search' });
   void app.register(uploadRoutes, { prefix: '/uploads' });
+  void app.register(onboardingRoutes, { prefix: '/onboarding' });
 
   app.get('/', async () => ({
     service: 'cairn-backend',
@@ -57,7 +59,8 @@ export const buildApp = (env: AppEnv): FastifyInstance => {
       'calendar view',
       'photo uploads',
       'EXIF metadata'
-    ]
+    ],
+    demo: '/onboarding'
   }));
 
   return app;

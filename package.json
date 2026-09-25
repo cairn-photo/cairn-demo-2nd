@@ -8,7 +8,10 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/main.js",
     "lint": "eslint .",
-    "check": "npm run build && npm run lint"
+    "check": "npm run build && npm run lint",
+    "dev:web": "npm --prefix frontend run dev",
+    "build:web": "npm --prefix frontend run build",
+    "lint:web": "npm --prefix frontend run lint"
   },
   "dependencies": {
     "@fastify/cors": "^10.0.1",

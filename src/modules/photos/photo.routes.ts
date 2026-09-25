@@ -30,15 +30,19 @@ export const photoRoutes: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.get('/:photoId', async (request) => ({
-    photoId: request.params.photoId,
-    visibility: 'private',
-    exif: {
-      camera: 'unknown',
-      lens: 'unknown',
-      iso: 0,
-      exposure: '1/250',
-      aperture: 'f/2.8'
-    }
-  }));
+  app.get<{ Params: { photoId: string } }>('/:photoId', async (request) => {
+    const { photoId } = request.params;
+
+    return {
+      photoId,
+      visibility: 'private',
+      exif: {
+        camera: 'unknown',
+        lens: 'unknown',
+        iso: 0,
+        exposure: '1/250',
+        aperture: 'f/2.8'
+      }
+    };
+  });
 };

@@ -1,6 +1,6 @@
-# Cairn Backend
+# Cairn Backend + Frontend
 
-This repository now contains a TypeScript Fastify backend scaffold for Cairn.
+This repository contains a TypeScript Fastify backend and a Vite + React frontend for Cairn.
 
 ## What is included
 
@@ -28,6 +28,14 @@ This repository now contains a TypeScript Fastify backend scaffold for Cairn.
 1. Copy `.env.example` to `.env` and adjust values.
 2. Install dependencies with `npm install`.
 3. Start development mode with `npm run dev`.
+
+## Run the frontend
+
+1. Install frontend dependencies with `npm --prefix frontend install`.
+2. Start the frontend with `npm run dev:web`.
+3. Open the URL printed by Vite. If `5173` is busy, Vite automatically falls back to the next open port.
+
+The frontend currently renders the onboarding flow as a mobile-first Figma match. It does not depend on Google or Apple auth configuration.
 
 ## Next step
 

@@ -20,8 +20,12 @@ export const routeRoutes: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.patch('/:routeId/state', async (request) => ({
-    routeId: request.params.routeId,
-    state: routeStateSchema.parse((request.body as { state?: string } | undefined)?.state ?? 'idle')
-  }));
+  app.patch<{ Params: { routeId: string } }>('/:routeId/state', async (request) => {
+    const { routeId } = request.params;
+
+    return {
+      routeId,
+      state: routeStateSchema.parse((request.body as { state?: string } | undefined)?.state ?? 'idle')
+    };
+  });
 };
