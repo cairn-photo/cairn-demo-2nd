@@ -59,12 +59,13 @@ button {
 .status-bar {
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 440px;
   height: 68px;
-  padding: 21px 24px 19px;
+  padding: 21px 24px 19px 24px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 175px;
 }
 
 .status-time {
@@ -73,16 +74,20 @@ button {
   font-weight: 600;
   line-height: 22px;
   text-align: center;
+  margin: 0;
 }
 
 .status-levels {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 7px;
 }
 
 .status-levels img {
   display: block;
+  width: auto;
+  height: auto;
 }
 
 .screen-logo {

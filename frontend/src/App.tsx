@@ -12,7 +12,7 @@ type FieldState = {
 
 const screenAssets = {
   login: {
-    statusTop: '-3px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/a9941e1c-a3a5-432f-863e-fb9a6099d4ec.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/10c0dceb-0371-4d0b-b153-6265778616ba.svg',
@@ -21,7 +21,7 @@ const screenAssets = {
     logo: 'https://www.figma.com/api/mcp/asset/b56d9a6e-afcd-446b-9503-37966df93dce.svg'
   },
   signup: {
-    statusTop: '7px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/6a927903-dfea-4df5-a6d2-8cb0aa158a75.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/84b1fb95-f04e-4b17-b44f-dbf918a35a2f.svg',
@@ -30,7 +30,7 @@ const screenAssets = {
     logo: 'https://www.figma.com/api/mcp/asset/48658317-d6f3-4eda-9051-2f7b3b90212b.svg'
   },
   age: {
-    statusTop: '7px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/229b1fa9-1450-436e-96d1-d4606eb6194b.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/82fcc227-5ea2-4f36-b393-4d8e0354eae5.svg',
@@ -39,7 +39,7 @@ const screenAssets = {
     logo: 'https://www.figma.com/api/mcp/asset/2df2afde-fb5c-4673-9205-cca33dfcaa67.svg'
   },
   source: {
-    statusTop: '7px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/7ed5f111-daa7-434c-8015-8d7567c864f5.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/eda88d1a-75f3-46f9-842a-ded890d74097.svg',
@@ -48,7 +48,7 @@ const screenAssets = {
     logo: 'https://www.figma.com/api/mcp/asset/6f978989-7186-4883-9b7b-4849b6db057d.svg'
   },
   years: {
-    statusTop: '7px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/e9c9c2bd-d9fc-4ba8-a919-ea97db49487c.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/66741f05-5703-4972-9d74-891ec8978225.svg',
@@ -57,7 +57,7 @@ const screenAssets = {
     logo: 'https://www.figma.com/api/mcp/asset/2a7d7204-b4f2-4225-a053-5e796f11d85f.svg'
   },
   profile: {
-    statusTop: '7px',
+    statusTop: '0px',
     status: {
       cellular: 'https://www.figma.com/api/mcp/asset/7f2267b7-b896-488d-9623-262bed396b01.svg',
       wifi: 'https://www.figma.com/api/mcp/asset/1fe160ce-c1fa-43c7-b7ea-ca17c93f9159.svg',
